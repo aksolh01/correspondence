@@ -1,0 +1,47 @@
+<div class="home">
+    <div class="home-header">
+        <div class="type">
+            <div class="data">
+                <div class="icon"><mat-icon  (click)="goToListing()">assignment</mat-icon></div>
+                <div class="lable">Incoming Correspondence</div>
+                <div class="counter">2</div>
+            </div>
+            <div  class="data">
+                <div class="icon"><mat-icon  (click)="goToListing()">assignment_returned</mat-icon></div>
+                <div class="lable"><span>Outgoing Correspondence</span></div>
+                <div class="counter">4</div>
+            </div>
+            <div  class="data">
+                <div class="icon"><mat-icon  (click)="goToListing()">assignment_turned_in</mat-icon></div>
+                <div class="lable">Internal Correspondence</div>
+                <div class="counter">10</div>
+            </div>
+        </div>
+        <div class="action">
+            <div mat-button [matMenuTriggerFor]="menu" class="menu">
+                <div class="icon"><mat-icon>add</mat-icon></div>
+                <div class="lable">Create New correspondence</div>
+            </div>
+                <mat-menu #menu="matMenu">
+                    <div mat-menu-item> Create Incoming Correspondence</div>
+                    <div mat-menu-item> Create Outgoing Correspondence</div>
+                    <div mat-menu-item> Create Internal Correspondence</div>
+                </mat-menu>
+        </div>
+    </div>
+    <div class="home-actions">
+        <div class="btn-action">
+            <div><button mat-raised-button>Edit</button></div>
+            <div class="mat-padding"></div>
+            <div><button mat-raised-button>Convert</button></div>
+        </div>
+    </div>
+    <div class="home-body">
+        <div class="home-body-list">
+            <app-correspondence-list></app-correspondence-list>
+        </div>
+        <div class="home-body-details">
+            <app-correspondence-details></app-correspondence-details>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+.list-correspondence{
+    margin-left:24px ;
+    .list-data{
+        padding: 8px;
+        margin-bottom: 4px;
+        background-color: white;
+        cursor: pointer;
+        .first-section{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .date{
+                width: 94%;
+                opacity: 0.54;
+                color: #000000;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .actions{
+                display: flex;
+                align-items: center;
+                .attachment{
+                    mat-icon{
+                        font-size: 16px;
+                    }
+                }
+                .lock{
+                    mat-icon{
+                        font-size: 16px;
+                    }
+                    .gold-color{
+                        color: goldenrod;
+                    }
+                }
+                
+                
+            }
+        }
+        .second-section{
+            opacity: 0.87;
+            color: #000000;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .third-section{
+            opacity: 0.54;
+            color: #000000;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: 22px;
+        }
+        &:hover{
+            background-color: rgb(238, 238, 238);
+            cursor: pointer;
+        }
+        &:first-child{
+            background-color: rgb(238, 238, 238);
+            cursor: pointer;
+        }
+    }
+}

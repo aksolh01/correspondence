@@ -1,0 +1,99 @@
+.home{
+
+    .home-header{
+        padding:20px;
+        display: flex;
+        align-items: center;
+        opacity: 0.67;
+        background-color: #FFFFFF;
+        .type{
+            display: flex;
+            align-items: center;
+            width:80%;
+            .data{
+                display: flex;
+                align-items: center;
+                margin-right: 42px;
+                border-right: 1px solid #8d8a8a;
+                padding-right: 24px;
+                &:last-child{
+                    border:none;
+                }
+                &:first-child{
+                    font-weight: bold;
+                }
+                .icon{
+                    margin-left: 4px;
+                }
+                .lable{
+                    color: #000000;
+                    font-size: 13px;
+                    cursor: pointer;
+                    
+                }
+                .counter{
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 21px;
+                    padding: 4px;
+                    background: red;
+                    color: white;
+                    text-align: center;
+                    margin-left: 8px;
+                }   
+            }
+        }
+        .action{
+            display: flex;
+            align-items: center;
+            .menu{
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                cursor: pointer;
+
+                .icon{
+                    margin-left: 4px;
+                }
+                .lable{
+                    opacity: 0.54;
+                    color: #000000;
+                    font-size: 13px;
+                    font-weight: bold;
+                } 
+            }
+        }
+    }
+
+    .home-body{
+        display: flex;
+        align-items: stretch;
+        background-color: #F3F3F3;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        .home-body-list{
+            width:35%;
+            margin-right: 32px;
+        }
+        .home-body-details{
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            margin-right: 20px;
+        }
+    }
+    .home-actions{
+        height: 72px;
+        width: 100%;
+        background-color: #e2b0b0;
+        display: flex;
+        align-items: center;
+
+        .btn-action{
+            display: flex;
+            align-items: center;
+            margin-left: 89%;
+        }
+        
+    }
+}

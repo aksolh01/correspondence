@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "correspondence"
+  "defaultProject": "correspondence",
+  "cli": {
+    "analytics": false
+  }
 }
